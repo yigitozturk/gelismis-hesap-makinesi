@@ -14,35 +14,51 @@ Toplama için +
 Bölme için /
 Kuvveti için **
 Bölümünden kalanı için %
+Karekökden çıkarmak için V
 
 """)
 
-    sayi1 = float(input("İlk sayıyı yazınız: "))
-    sayi2 = float(input("İkinci sayıyı yazınız: "))
-
     if operation == "+":
+        sayi1 = float(input("Toplanan ilk sayıyı yazınız: "))
+        sayi2 = float(input("Toplanan ikinci sayıyı yazınız: "))
         print('{} + {} = '.format(sayi1,sayi2))
         print(sayi1 + sayi2)
 
     elif operation == '-':
+        sayi1 = float(input("Eksilen sayıyı yazınız: "))
+        sayi2 = float(input("Çıkan sayıyı yazınız: "))
         print("{} - {} = ".format(sayi1,sayi2))
         print(sayi1 - sayi2)
 
     elif operation == '*':
+        sayi1 = float(input("Çarpan ilk sayıyı yazınız: "))
+        sayi2 = float(input("Çarpan ikinci sayıyı yazınız: "))
         print("{} * {} = ".format(sayi1,sayi2))
         print(sayi1 * sayi2)
 
     elif operation == '/':
+        sayi1 = float(input("Bölünen sayıyı yazınız: "))
+        sayi2 = float(input("Bölen sayıyı yazınız: "))
         print("{} / {} = ".format(sayi1,sayi2))
         print(sayi1 * sayi2)
 
     elif operation == '**':
+        sayi1 = float(input("İlk sayıyı yazınız: "))
+        sayi2 = float(input("Kuvvetini yazınız: "))
         print("{} ** {} = ".format(sayi1,sayi2))
         print(sayi1 ** sayi2)
         
     elif operation == '%':
+        sayi1 = float(input("İlk sayıyı yazınız: "))
+        sayi2 = float(input("Bölen sayıyı yazınız: "))
         print("{} % {} = ".format(sayi1,sayi2))
         print(sayi1 % sayi2)
+        
+    elif operation == 'V':
+        import math
+        sayi1 = float(input("Karekökden çıkarıcağınız sayıyı yazınız: "))
+        print("√¯{}".format(sayi1))
+        print(math.sqrt(sayi1))
         
     else:
         print("")
