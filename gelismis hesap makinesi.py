@@ -13,6 +13,7 @@ Toplama için +
 Çarpma için *
 Bölme için /
 Kuvveti için **
+Bölümünden kalanı için %
 
 """)
 
@@ -38,6 +39,10 @@ Kuvveti için **
     elif operation == '**':
         print("{} ** {} = ".format(sayi1,sayi2))
         print(sayi1 ** sayi2)
+        
+    elif operation == '%':
+        print("{} % {} = ".format(sayi1,sayi2))
+        print(sayi1 % sayi2)
         
     else:
         print("")
