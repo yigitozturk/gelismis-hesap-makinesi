@@ -40,7 +40,7 @@ Karekökden çıkarmak için V
         sayi1 = float(input("Bölünen sayıyı yazınız: "))
         sayi2 = float(input("Bölen sayıyı yazınız: "))
         print("{} / {} = ".format(sayi1,sayi2))
-        print(sayi1 * sayi2)
+        print(sayi1 / sayi2)
 
     elif islem == '**':
         sayi1 = float(input("İlk sayıyı yazınız: "))
@@ -54,7 +54,7 @@ Karekökden çıkarmak için V
         print("{} % {} = ".format(sayi1,sayi2))
         print(sayi1 % sayi2)
         
-    elif islem == 'V':
+    elif islem.upper() == 'V':
         import math
         sayi1 = float(input("Karekökden çıkarıcağınız sayıyı yazınız: "))
         print("√¯{}".format(sayi1))
