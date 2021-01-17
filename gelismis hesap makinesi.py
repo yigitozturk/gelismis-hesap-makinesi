@@ -6,7 +6,7 @@ Hesap Makinesine Hoşgeldin!
 hosgeldin()
 
 def hesaplama():
-    operation = input(""" 
+    islem = input(""" 
 Yapmak istediğin işlemi komut satırına yazınız;
 Toplama için +
 Çıkarma için -
@@ -18,43 +18,43 @@ Karekökden çıkarmak için V
 
 """)
 
-    if operation == "+":
+    if islem == "+":
         sayi1 = float(input("Toplanan ilk sayıyı yazınız: "))
         sayi2 = float(input("Toplanan ikinci sayıyı yazınız: "))
         print('{} + {} = '.format(sayi1,sayi2))
         print(sayi1 + sayi2)
 
-    elif operation == '-':
+    elif islem == '-':
         sayi1 = float(input("Eksilen sayıyı yazınız: "))
         sayi2 = float(input("Çıkan sayıyı yazınız: "))
         print("{} - {} = ".format(sayi1,sayi2))
         print(sayi1 - sayi2)
 
-    elif operation == '*':
+    elif islem == '*':
         sayi1 = float(input("Çarpan ilk sayıyı yazınız: "))
         sayi2 = float(input("Çarpan ikinci sayıyı yazınız: "))
         print("{} * {} = ".format(sayi1,sayi2))
         print(sayi1 * sayi2)
 
-    elif operation == '/':
+    elif islem == '/':
         sayi1 = float(input("Bölünen sayıyı yazınız: "))
         sayi2 = float(input("Bölen sayıyı yazınız: "))
         print("{} / {} = ".format(sayi1,sayi2))
         print(sayi1 * sayi2)
 
-    elif operation == '**':
+    elif islem == '**':
         sayi1 = float(input("İlk sayıyı yazınız: "))
         sayi2 = float(input("Kuvvetini yazınız: "))
         print("{} ** {} = ".format(sayi1,sayi2))
         print(sayi1 ** sayi2)
         
-    elif operation == '%':
+    elif islem == '%':
         sayi1 = float(input("İlk sayıyı yazınız: "))
         sayi2 = float(input("Bölen sayıyı yazınız: "))
         print("{} % {} = ".format(sayi1,sayi2))
         print(sayi1 % sayi2)
         
-    elif operation == 'V':
+    elif islem == 'V':
         import math
         sayi1 = float(input("Karekökden çıkarıcağınız sayıyı yazınız: "))
         print("√¯{}".format(sayi1))
