@@ -7,7 +7,7 @@ hosgeldin()
 
 def hesaplama():
     operation = input(""" 
-Yapmak istediğin işlemi komut satırına yaz;
+Yapmak istediğin işlemi komut satırına yazınız;
 Toplama için +
 Çıkarma için -
 Çarpma için *
@@ -62,7 +62,8 @@ Karekökden çıkarmak için V
         
     else:
         print("")
-        print("Yanlış bir sembol girdiniz lütfen sembolleri doğru yazın.")
+        print("Yanlış bir sembol girdiniz lütfen sembolleri doğru yazınız.")
+        hesaplama()
         
     tekrar()
 
@@ -70,7 +71,7 @@ def tekrar():
     tekraret = input(""" 
 Tekrar hesaplama yapmak istiyormusun?
 Lütfen yapmak istiyor isen E
-Yapmamak istiyor isen H yaz.
+Yapmamak istiyor isen H yazınız.
 
 """)
 
